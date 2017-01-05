@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
@@ -38,6 +38,11 @@ $(function(){
             maxPageButton:buttons,
             onPageClicked: function(obj, pageIndex) {
               $('#pageIndex').html('您选择了第<font color=red>'+(pageIndex+1)+'</font>页');
+              console.log('您选择了第'+(pageIndex+1)+'页');
+            },
+            onJumpClicked:function(obj, pageIndex) {
+              $('#pageIndex').html('跳转<font color=red>'+(pageIndex+1)+'</font>页');
+              console.log('跳转'+(pageIndex+1)+'页');
             }
         });
     }
@@ -52,6 +57,42 @@ $(function(){
 
     $('#btn3').click(function(){
         createPage(5, 12, 200);
+    });
+
+    $('#btn4').click(function(){
+        createPage(1, 6, 1);
+    });
+    $('#btn5').click(function(){
+        createPage(1, 6, 2);
+    });
+    $('#btn6').click(function(){
+        createPage(1, 6, 3);
+    });
+    $('#btn7').click(function(){
+        createPage(1, 6, 4);
+    });
+    $('#btn8').click(function(){
+        createPage(1, 6, 5);
+    });
+    $('#btn9').click(function(){
+        createPage(1, 6, 6);
+    });
+    $('#btn10').click(function(){
+        createPage(1, 6, 7);
+    });
+
+
+    $('#btn11').click(function(){
+        createPage(1, 6, 0);
+    });
+    $('#btn12').click(function(){
+        createPage(1, 0, 0);
+    });
+    $('#btn13').click(function(){
+        createPage(1, 0, 1);
+    });
+    $('#btn14').click(function(){
+        createPage(0, 0, 0);
     });
        
 });
@@ -69,9 +110,38 @@ $(function(){
       &nbsp;&nbsp;
       <input type="button" id="btn3" value="每页5条，12个按钮，共200条" />
 
+<br><hr>
+
+
+      <input type="button" id="btn4" value="每页1条，6个按钮，共1条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn5" value="每页1条，6个按钮，共2条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn6" value="每页1条，6个按钮，共3条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn7" value="每页1条，6个按钮，共4条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn8" value="每页1条，6个按钮，共5条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn9" value="每页1条，6个按钮，共6条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn10" value="每页1条，6个按钮，共7条" />
+<br><hr>
+      &nbsp;&nbsp;
+    <input type="button" id="btn11" value="每页1条，6个按钮，共0条" />
+      &nbsp;&nbsp;
+    <input type="button" id="btn12" value="每页1条，0个按钮，共0条" />
+      &nbsp;&nbsp;
+    <input type="button" id="btn13" value="每页1条，0个按钮，共1条" />
+      &nbsp;&nbsp;
+      <input type="button" id="btn14" value="每页0条，0个按钮，共0条" />
+      &nbsp;&nbsp;
+
+
+
       <p id="pageIndex" style="font-size:20px;font-weight:bold;color:blue;margin-left:150px;"></p>
 
-      <ul class="pagination"></ul>
+      <div class="pagination"></div>
     </div>
 </body>
 <!-- END BODY -->
