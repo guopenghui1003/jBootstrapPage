@@ -63,9 +63,9 @@
 
                 //添加跳转html
                 var jumpHTML='<div style="display:inline-block;">'+
-                            '<span id="jumpBtnId"   style="color:#2a6496;display: inline;margin-left: 10px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;border: 1px solid #ddd;padding: 8px 12px 9px 12px;cursor:not-allowed;">'+c.jumpBtnText+'</span>'+
-                            '<input id="jumpInputId" type="text" style="color:#2a6496;display: inline;width:30px;font-size: 18px;margin: 0;border: 1px solid #ddd;padding: 6px 12px 6px 12px;">'+
-                            '<span style="color:#2a6496;display: inline;margin-left: 0;border-top-right-radius: 4px;border-bottom-right-radius: 4px;border: 1px solid #ddd;padding: 8px 12px 9px 12px;">'+c.jumpFlagText+'</span>'+
+                            '<span id="jumpBtnId"   style="color:#428bca;display: inline;margin-left: 10px;border-top-left-radius: 4px;border-bottom-left-radius: 4px;border: 1px solid #ddd;padding: 8px 12px 9px 12px;cursor:not-allowed;">'+c.jumpBtnText+'</span>'+
+                            '<input id="jumpInputId" type="text" style="color:#428bca;text-align:center;display: inline;width:30px;font-size: 18px;margin: 0;border: 1px solid #ddd;padding: 6px 12px 6px 12px;">'+
+                            '<span style="color:#428bca;display: inline;margin-left: 0;border-top-right-radius: 4px;border-bottom-right-radius: 4px;border: 1px solid #ddd;padding: 8px 12px 9px 12px;">'+c.jumpFlagText+'</span>'+
                         '</div>';
                 $this.append(jumpHTML);
                 $("#jumpBtnId").prop("disabled",true);
