@@ -43,7 +43,12 @@ $(function(){
             total : total,
             maxPageButton:buttons,
             onPageClicked: function(obj, pageIndex) {
-                alert((pageIndex+1)+'页');
+              $('#pageIndex').html('您选择了第<font color=red>'+(pageIndex+1)+'</font>页');
+              console.log('您选择了第'+(pageIndex+1)+'页');
+            },
+            onJumpClicked:function(obj, pageIndex) {
+              $('#pageIndex').html('跳转<font color=red>'+(pageIndex+1)+'</font>页');
+              console.log('跳转'+(pageIndex+1)+'页');
             }
         });
     }
